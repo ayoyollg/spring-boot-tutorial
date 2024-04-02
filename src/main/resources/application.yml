@@ -1,0 +1,51 @@
+server:
+  port: 8888
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  # 配置redis
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+#--- 下面是一個單獨文檔
+
+pig:
+  id: 123
+  name: 佩奇
+  age: 18
+sheep:
+  id: 456
+  name: 喜羊羊
+  age: 20
+
+person:
+  name: zhangsan
+  age: 18
+  birthday: 2020-01-01
+  gender: true
+  child:
+    name: lisi
+    age: 10
+    birthday: 2020-01-01
+    texts: ["hello", "world"]
+  dogs:
+    - name: 旺财
+      age: 10
+    - name: 大黄
+      age: 12
+  cats:
+    c1:
+      name: 小胖
+      age: 10
+    c2:
+      name: 小花
+      age: 12
+    c3: {name: 小猫, age: 10}
+#    List有兩種寫法
+#    texts:
+#      - hello
+#      - world
+#    texts: ["hello", "world"]
